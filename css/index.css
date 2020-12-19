@@ -1,0 +1,201 @@
+/*  default
+-----------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+    max-width: 90%;
+}
+.sign-it{
+    border: 1px solid #fff;
+    padding: 15px 33px;
+    display: block;
+}
+
+/*  color
+-----------------------------------*/
+:root{
+    --p-plans: #4a7c90;
+    --bg-plans: #113949;
+    --yellow: #e8d26b;
+}
+
+/*  header
+-----------------------------------*/
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 0;
+    transition: all .5s;
+}
+.header.sticky{
+    background-color: var(--bg-plans);
+    padding: 5px 0;
+    box-shadow: 0 5px 5px rgba(0,0,0,.2);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: block;
+    width: 80px;
+}
+.call{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.call p{
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-right: 20px;
+}
+.call p i{
+    margin-right: 5px;
+}
+
+/*  banner
+-----------------------------------*/
+.banner-area{
+    position: relative;
+    width: 100%;
+    height: 110vh;
+}
+.banner-area img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.intro{
+    position: absolute;
+    width: 1170px;
+    max-width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+}
+.intro h1{
+    font-size: 3em;
+    font-weight: 300;
+}
+.yellow{
+    color: var(--yellow);
+}
+.offer-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.offer-box span{
+    display: block;
+    text-transform: uppercase;
+}
+.speed{
+    font-size: 2.2em;
+}
+.offer{
+    width: 167px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.for, .only, .month{
+    font-size: 0.625em;
+}
+.rs, .cent{
+    font-size: 1.875em;
+}
+.real{
+    font-size: 4.375em;
+    margin: 0 5px;
+}
+.month{
+    text-align: right;
+}
+
+/*  plans
+-----------------------------------*/
+.plans-area{
+    background-color: var(--bg-plans);
+    padding: 100px 0;
+}
+.plans{
+    display: flex;
+    justify-content: center;
+}
+.plan-box{
+    border: 1px solid #2f5b6d;
+    border-radius: 6px;
+    width: 330px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.plan-box:last-child{
+    border-color: var(--yellow);
+}
+.plan-box .offer{
+    margin: 40px 0;
+    text-align: left;
+}
+.plan-box span{
+    display: block;
+    text-transform: uppercase;
+}
+.plan-box .offer span{
+    color: var(--yellow);
+}
+.mega h2{
+    font-size: 4em;
+    color: var(--yellow);
+}
+.megas{
+    font-size: 1.625em;
+    margin-bottom: 20px;
+}
+.description{
+    font-size: 0.875em;
+    color: #4a7c90;
+}
+
+/*  netflix
+-----------------------------------*/
+.netflix-banner{
+    background-image: url('../img/netflix.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.netflix-banner p{
+    position: absolute;
+    top: 100px;
+    left: 70px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    width: 500px;
+    line-height: 30px;
+    font-weight: 700;
+}
