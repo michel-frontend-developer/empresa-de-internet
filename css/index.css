@@ -14,6 +14,7 @@ ul{
 }
 a{
     text-decoration: none;
+    outline: none;
 }
 .container{
     width: 1170px;
@@ -29,8 +30,8 @@ a{
 /*  color
 -----------------------------------*/
 :root{
-    --p-plans: #4a7c90;
-    --bg-plans: #113949;
+    --p-blue: #4a7c90;
+    --bg-blue: #113949;
     --yellow: #e8d26b;
 }
 
@@ -44,13 +45,14 @@ a{
     transition: all .5s;
 }
 .header.sticky{
-    background-color: var(--bg-plans);
+    background-color: var(--bg-blue);
     padding: 5px 0;
     box-shadow: 0 5px 5px rgba(0,0,0,.2);
 }
 .navbar{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .logo{
     display: block;
@@ -92,8 +94,10 @@ a{
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.intro h1{
+.solution h1{
     font-size: 3em;
     font-weight: 300;
 }
@@ -117,7 +121,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .for, .only, .month{
     font-size: 0.625em;
@@ -136,12 +140,13 @@ a{
 /*  plans
 -----------------------------------*/
 .plans-area{
-    background-color: var(--bg-plans);
+    background-color: var(--bg-blue);
     padding: 100px 0;
 }
-.plans{
+.plans-row{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .plan-box{
     border: 1px solid #2f5b6d;
@@ -177,7 +182,7 @@ a{
 }
 .description{
     font-size: 0.875em;
-    color: #4a7c90;
+    color: var(--p-blue);
 }
 
 /*  netflix
@@ -191,11 +196,146 @@ a{
 }
 .netflix-banner p{
     position: absolute;
-    top: 100px;
-    left: 70px;
+    top: 20%;
+    left: 5%;
     font-size: 1.5em;
     text-transform: uppercase;
     width: 500px;
     line-height: 30px;
     font-weight: 700;
+}
+
+/*  footer
+-----------------------------------*/
+.footer{
+    background-color: var(--bg-blue);
+    padding: 60px 0;
+}
+.footer-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.work p{
+    width: 346px;
+    line-height: 30px;
+    font-size: 0.875em;
+    color: var(--p-blue);
+}
+.social-icons{
+    display: flex;
+    margin-top: 20px;
+}
+.social-icons li{
+    font-size: 2.5em;
+    margin-right: 20px;
+    transition: all ease 0.3s;
+}
+.social-icons li:last-child{
+    margin-right: 0;
+}
+.social-icons li:hover{
+    opacity: 0.5;
+}
+.icon i{
+    color: var(--p-blue);
+}
+.contact-us{
+    width: 346px;
+}
+.contact-us h2, .contact-us li, .contact-us li i{
+    color: var(--p-blue);
+}
+.contact{
+    margin-top: 30px;
+}
+.contact li{
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 2;
+}
+
+/*  medium device - desktop and tablet
+-----------------------------------*/
+@media screen and (max-width: 960px){
+    /*  header
+    -------------------------------*/
+    .solution{
+        width: 100%;
+        text-align: center;
+        margin: 110px 0 40px;
+    }
+    .solution h1{
+        font-size: 2.5em;
+    }
+    .offer-box{
+        width: 100%;
+    }
+
+    /*  banner
+    -------------------------------*/
+    .banner-area{
+        height: 140vh;
+    }
+
+    /*  netflix
+    -------------------------------*/
+    .netflix-banner p{
+        top: 10%;
+        left: 5%;
+    }
+}
+
+/*  medium device - tablet
+-----------------------------------*/
+@media screen and (max-width: 768px){
+    /*  footer
+    -------------------------------*/
+    .work{
+        margin-bottom: 80px;
+    }
+}
+
+/*  small device - mobile
+-----------------------------------*/
+@media screen and (max-width: 600px){
+    /*  header
+    -------------------------------*/
+    .header{
+        position: absolute;
+    }
+    .navbar{
+        justify-content: center;
+    }
+    .call{
+        display: none;
+    }
+
+    /*  netflix
+    -------------------------------*/
+    .netflix-banner p{
+        top: 4%;
+        width: 300px;        
+        font-size: 1.2em;
+    }    
+}
+
+/*  small device - mobile
+-----------------------------------*/
+@media screen and (max-width: 480px){
+    /*  banner
+    -------------------------------*/
+    .banner-area{
+        height: 160vh;
+    }
+
+    /*  footer
+    -------------------------------*/
+    .work p{
+        width: 300px;
+    }
+    .contact-us{
+        width: 300px;
+    }
 }
