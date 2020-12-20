@@ -364,8 +364,7 @@ a{
     /*  modal
     -------------------------------*/
     .modal-content{
-        height: 100vh;
-        transform: rotate(-90deg);
+        overflow-y: scroll;
     }
 }
 @media screen and (max-width: 960px){
