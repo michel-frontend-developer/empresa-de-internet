@@ -197,12 +197,55 @@
     </footer>
     <!-- /footer -->
 
+    <!-- modal -->
+    <div class="modal-container">
+        <div class="modal-content">
+            <div class="close-icon">
+                <i class="far fa-times-circle"></i>
+            </div>
+
+            <h2>Confira se a empresa tem cobertura na sua região</h2>
+
+            <form class="form-service">
+                <div class="input-field">
+                    <label for="name">Nome</label>
+                    <input type="text" name="" id="name" placeholder="Digite seu nome completo">
+                </div>
+
+                <div class="input-field">
+                    <label for="phone">Telefone</label>
+                    <input type="phone" name="" id="phone" placeholder="Ex: (11) 91234-5678">
+                </div>
+
+                <div class="input-field-group">
+                    <div class="input-field">
+                        <label for="name">CEP</label>
+                        <input type="text" name="" id="name" placeholder="Ex: 01234-010">
+                    </div>
+
+                    <div class="input-field">
+                        <label for="name">N° da residência</label>
+                        <input type="text" name="" id="name" placeholder="Ex: 145">
+                    </div>
+                </div>
+
+                <div>
+                    <button class="btn-send" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /modal -->
+
     <script type="text/javascript">
         //  header animation
         window.addEventListener('scroll', function(){
             const header = document.querySelector('.header');
             header.classList.toggle('sticky', window.scrollY > 0 && window.innerWidth > 600);
         });
+
+        //  modal
+
     </script>
 </body>
 </html>
