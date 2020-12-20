@@ -266,6 +266,12 @@ a{
     .banner-area{
         height: 600px;
     }
+
+    /*  modal
+    -------------------------------*/
+    .modal-content{
+        height: 100vh;
+    }
 }
 @media screen and (max-width: 960px){
     /*  header
@@ -313,7 +319,7 @@ a{
         padding: 0 5%;
         text-align: center;
     }
-    
+
     /*  footer
     -------------------------------*/
     .work{
