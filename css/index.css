@@ -388,8 +388,7 @@ a{
 }
 .modal-content{
     background-color: var(--heavy-blue);
-    max-width: 448px;
-    width: 100%;
+    width: 448px;
     border-radius: 10px;
     padding: 20px 30px;
 }
