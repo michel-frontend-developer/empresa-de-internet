@@ -258,104 +258,6 @@ a{
     line-height: 2;
 }
 
-/*  medium device - desktop and tablet
------------------------------------*/
-@media only screen and (max-width: 960px) and (orientation: landscape){
-    /*  banner-area
-    -------------------------------*/
-    .banner-area{
-        height: 600px;
-    }
-
-    /*  modal
-    -------------------------------*/
-    .modal-content{
-        height: 100vh;
-    }
-}
-@media screen and (max-width: 960px){
-    /*  header
-    -------------------------------*/
-    .solution{
-        width: 100%;
-        text-align: center;
-        margin: 110px 0 40px;
-    }
-    .solution h1{
-        font-size: 2.5em;
-    }
-    .offer-box{
-        width: 100%;
-    }
-
-    /*  netflix
-    -------------------------------*/
-    .netflix-banner p{
-        top: 10%;
-        left: 5%;
-    }
-}
-
-/*  medium device - tablet
------------------------------------*/
-@media screen and (max-width: 768px){
-    /*  netflix
-    -------------------------------*/
-    .netflix-banner{
-        background-position: right;
-    }
-    .netflix-banner:after{
-        content: '';
-        display: block;
-        background-color: rgba(0, 0, 0, .3);
-        width: 100%;
-        height: 100vh;
-    }
-    .netflix-banner p{
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        padding: 0 5%;
-        text-align: center;
-    }
-
-    /*  footer
-    -------------------------------*/
-    .work{
-        margin-bottom: 80px;
-    }
-}
-
-/*  small device - mobile
------------------------------------*/
-@media screen and (max-width: 600px){
-    /*  header
-    -------------------------------*/
-    .header{
-        position: absolute;
-    }
-    .navbar{
-        justify-content: center;
-    }
-    .call{
-        display: none;
-    }
-}
-
-/*  small device - mobile
------------------------------------*/
-@media screen and (max-width: 480px){
-    /*  footer
-    -------------------------------*/
-    .work p{
-        width: 270px;
-    }
-    .contact-us{
-        width: 270px;
-    }
-}
-
 /*  modal
 -----------------------------------*/
 .modal-container{
@@ -449,3 +351,103 @@ a{
     outline: none;
     cursor: pointer;
 }
+
+/*  medium device - desktop and tablet
+-----------------------------------*/
+@media only screen and (max-width: 960px) and (orientation: landscape){
+    /*  banner-area
+    -------------------------------*/
+    .banner-area{
+        height: 600px;
+    }
+
+    /*  modal
+    -------------------------------*/
+    .modal-content{
+        width: 100%;
+        margin: 0 5%;
+    }
+}
+@media screen and (max-width: 960px){
+    /*  header
+    -------------------------------*/
+    .solution{
+        width: 100%;
+        text-align: center;
+        margin: 110px 0 40px;
+    }
+    .solution h1{
+        font-size: 2.5em;
+    }
+    .offer-box{
+        width: 100%;
+    }
+
+    /*  netflix
+    -------------------------------*/
+    .netflix-banner p{
+        top: 10%;
+        left: 5%;
+    }
+}
+
+/*  medium device - tablet
+-----------------------------------*/
+@media screen and (max-width: 768px){
+    /*  netflix
+    -------------------------------*/
+    .netflix-banner{
+        background-position: right;
+    }
+    .netflix-banner:after{
+        content: '';
+        display: block;
+        background-color: rgba(0, 0, 0, .3);
+        width: 100%;
+        height: 100vh;
+    }
+    .netflix-banner p{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        padding: 0 5%;
+        text-align: center;
+    }
+
+    /*  footer
+    -------------------------------*/
+    .work{
+        margin-bottom: 80px;
+    }
+}
+
+/*  small device - mobile
+-----------------------------------*/
+@media screen and (max-width: 600px){
+    /*  header
+    -------------------------------*/
+    .header{
+        position: absolute;
+    }
+    .navbar{
+        justify-content: center;
+    }
+    .call{
+        display: none;
+    }
+}
+
+/*  small device - mobile
+-----------------------------------*/
+@media screen and (max-width: 480px){
+    /*  footer
+    -------------------------------*/
+    .work p{
+        width: 270px;
+    }
+    .contact-us{
+        width: 270px;
+    }
+}
+
