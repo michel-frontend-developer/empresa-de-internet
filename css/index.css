@@ -24,7 +24,7 @@ a{
 .sign-it{
     border: 1px solid #fff;
     padding: 15px 33px;
-    display: block;
+    display: inline-block;
 }
 
 /*  color
@@ -227,11 +227,11 @@ a{
     line-height: 1.5;
     margin-bottom: 20px;
 }
-.services-row p:last-child{
-    margin-bottom: 0;
-}
 .services-row p span{
     color: var(--yellow);
+}
+.service-col-50 .sign-it{
+    margin: 10px 0;
 }
 .service-col-50{
     width: 48%;
@@ -446,10 +446,9 @@ a{
     /*  services
     -------------------------------*/
     .service-col-50:first-child{
-        width: 100%;
         margin-bottom: 70px;
     }
-    .service-col-50:last-child{
+    .service-col-50{
         width: 670px;
         margin: 0 auto;
     }
