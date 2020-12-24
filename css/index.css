@@ -230,8 +230,9 @@ a{
 .services-row p span{
     color: var(--yellow);
 }
-.service-col-50 .sign-it{
-    margin: 10px 0;
+.sign{
+    text-align: center;
+    margin-top: 40px;
 }
 .service-col-50{
     width: 48%;
